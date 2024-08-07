@@ -22,8 +22,8 @@ jobs:
       
     - name: Build executable  # 第四步：使用 PyInstaller 打包
       run: |
-        pyinstaller -F v2cnFont.py
-        cp texconv.exe dist/texconv.exe
+        pyinstaller -F main/v2cnFont.py
+        cp exeLib/texconv.exe dist/texconv.exe
         
     - name: Upload Artifact  # 第五步：上传生成的 dist 目录到 Artifacts
       uses: actions/upload-artifact@v3
