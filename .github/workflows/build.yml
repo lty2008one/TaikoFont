@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # 运行环境，选择最新的 Ubuntu
+    runs-on: windows-latest  # 运行环境，选择最新的 Ubuntu
 
     steps:
     - name: Checkout repository  # 第一步：检出仓库内容
